@@ -1,0 +1,4 @@
+.bag {padding:5px;margin:5px 0;border:1px solid #eee;border-left-width:5px;border-radius:5px;border-left-color:#2fa4e7}
+#formNotes {display:none}
+.bag button {margin-left:3px}
+#save,#update {display:none}

@@ -1,0 +1,6 @@
+<% if(defined flash 'error') { %>
+<div class='alert alert-danger'><%= flash 'error' %></div>
+<%}%>
+<% if(defined flash 'notice') { %>
+<div class='alert alert-success'><%= flash 'notice'%></div>
+<%}%>

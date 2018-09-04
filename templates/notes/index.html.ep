@@ -1,0 +1,24 @@
+% layout 'default';
+% title 'Notes';
+<p><button id="fAdd" class="btn btn-primary btn-sm">Add</button></p>
+<form id="formNotes">
+<input id="id" type="hidden" name="id" value=""/>
+
+<div class="form-group">
+<textarea id="textarea" class="form-control input-sm" name="text" placeholder="Text"></textarea>
+</div>
+
+<div class="form-group">
+<button id="save" class="btn btn-success btn-sm btn-block">Save</button>
+<button id="update" class="btn btn-success btn-sm btn-block">Update</button>
+</div>
+</form>
+
+% foreach my $nt (@$notes) {
+<div class="bag">
+<button id="c_<%= $nt->[0] %>" class="float-right btn btn-danger btn-sm" data-dismiss="bag">Delete</button>
+<button id="e_<%= $nt->[0] %>" class="float-right btn btn-info btn-sm">Edit</button>
+<b class="date"><%= $nt->[3] %></b>
+<p id="t_<%= $nt->[0] %>"><%= $nt->[2] %></p>
+</div>
+% }

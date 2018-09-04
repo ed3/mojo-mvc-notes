@@ -1,0 +1,3 @@
+% layout 'default';
+% title 'Logeed';
+<h1>Hi <%= session 'username' %>!</h1>
